@@ -20,17 +20,13 @@ document.getElementById("time").innerHTML =week[n]+" , "+d;
 function process()
 {
       var selectedValue=document.getElementById("city").value;
-      console.log(selectedValue);
       var request = new XMLHttpRequest()
       // Open a new connection, using the GET request on the URL endpoint
       request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
       request.onload = function() {
         // Begin accessing JSON data here
       var data = JSON.parse(this.response);
-      console.log(data);
-      console.log(data.list[0].main.temp);
       tempc=data.list[0].main.temp;
-      console.log(data.list[0].weather[0].description);
       var temp=city.filter((v)=> v.city===selectedValue);
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
       document.getElementById("temp").innerHTML=data.list[0].main.temp+""+"&#8451;";
