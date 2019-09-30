@@ -23,7 +23,7 @@ function process()
       console.log(selectedValue);
       var request = new XMLHttpRequest()
       // Open a new connection, using the GET request on the URL endpoint
-      request.open('GET', 'https://api.openweathermap.org/data/2.5/find?q='+selectedValue+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
+      request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
       request.onload = function() {
         // Begin accessing JSON data here
       var data = JSON.parse(this.response);
@@ -43,7 +43,7 @@ function findTemp()
   var selectedValue=document.getElementById("city").value;
   var request = new XMLHttpRequest()
   // Open a new connection, using the GET request on the URL endpoint
-     request.open('GET', 'https://api.openweathermap.org/data/2.5/find?q='+selectedValue+'& units=imperial&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
+     request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'& units=imperial&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
       request.onload = function() {
     // Begin accessing JSON data here
        var data = JSON.parse(this.response);
