@@ -20,4 +20,4 @@ Create a Weather Application which shows real time temperature of cities.
 
 
 ## Visit:
-[WeatherApp](https://aadeshnichite.github.io/CanvasGame/)
+[WeatherApp](https://aadeshnichite.github.io/LiveWeather-App-Using-API/)
