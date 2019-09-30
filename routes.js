@@ -38,21 +38,21 @@ function process()
       }
      request.send();
 }
-// function findTemp()
-// {
-//   var selectedValue=document.getElementById("city").value;
-//   var request = new XMLHttpRequest()
-//   // Open a new connection, using the GET request on the URL endpoint
-//      request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'& units=imperial&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
-//       request.onload = function() {
-//     // Begin accessing JSON data here
-//        var data = JSON.parse(this.response);
-//        var temp=city.filter((v)=> v.city===selectedValue);
-//       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
-//       document.getElementById("temp").innerHTML=data.list[0].main.temp+""+"&#8457;";
-//       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
-//   }
-//   request.send()
-// }
+function findTemp()
+{
+  var selectedValue=document.getElementById("city").value;
+  var request = new XMLHttpRequest()
+  // Open a new connection, using the GET request on the URL endpoint
+     request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'& units=imperial&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
+      request.onload = function() {
+    // Begin accessing JSON data here
+       var data = JSON.parse(this.response);
+       var temp=city.filter((v)=> v.city===selectedValue);
+      document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
+      document.getElementById("temp").innerHTML=data.list[0].main.temp+""+"&#8457;";
+      document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
+  }
+  request.send()
+}
 
 
