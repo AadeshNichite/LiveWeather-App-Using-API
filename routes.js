@@ -34,11 +34,11 @@ function process()
       document.getElementById("temp").innerHTML=data.list[0].main.temp;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
       document.getElementById("button1").style.color = "black";
-      document.getElementById("button2").style.color = "lightblue";
+      document.getElementById("button2").style.color = "#666666";
       }
      request.send();
 }
-document.getElementById("button2").style.color = "lightblue";
+document.getElementById("button2").style.color = "#666666";
 function findTemp()
 {
   var selectedValue=document.getElementById("city").value;
@@ -54,7 +54,7 @@ function findTemp()
       document.getElementById("temp").innerHTML=NewData;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
       document.getElementById("button2").style.color = "black";
-      document.getElementById("button1").style.color = "lightblue";
+      document.getElementById("button1").style.color = "#666666";
   }
   request.send()
 }
