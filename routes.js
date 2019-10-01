@@ -1,7 +1,7 @@
 const city = [
   {  name: "Maharashtra", city: "Pune"},
   {  name: "Maharashtra", city: "Mumbai"},
-  {  name: "Karnataka", city: "Benguluru"},
+  {  name: "Karnataka", city: "Bangalore"},
   {  name: "Maharashtra", city: "Kolhapur"},
   {  name: "Maharashtra", city: "Satara"},
   {  name: "Maharashtra", city: "Karad"},
@@ -26,7 +26,9 @@ function process()
       request.onload = function() {
         // Begin accessing JSON data here
       var data = JSON.parse(this.response);
-      tempc=data.list[0].main.temp;
+      console.log(data);
+      console.log(data.list[0].weather[0].icon);
+     // tempc=data.list[0].main.temp;
       var temp=city.filter((v)=> v.city===selectedValue);
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
       document.getElementById("temp").innerHTML=data.list[0].main.temp+""+"&#8451;";

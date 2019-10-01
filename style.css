@@ -1,69 +1,65 @@
 /* This css is used to gave the stylesheet to the index.html file  */
 
-body{
-    width: 90%;
-    height: 72%;
-    padding: 0%;
-    margin: 0%;
+:root{
+    --color-1:rgb(0, 204, 255);
+    --color-2:white;
 }
 span{
-    color: white;
-    
+    color:var( --color-2);
 }
-.button1 {
+.row{
+    height: 100vh;
+}
+.col-sm.l
+{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+}
+.col-sm.r
+{
+    margin: 0;
+    padding: 0;
+    background-color: var( --color-2);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+ .button1 {
     background:none;
     border: none;
     margin: 0;
     padding: 0;
     cursor: pointer;
+    font-size: 14px;
 
   }
   .button1:focus{
-      background-color :yellow;
-      
+      color: green ;
   }
-  
-  .leftSide
+  #state
   {
-    width: 50%;
-    background-color: blueviolet;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%; 
-    height: 100%;
-    float: left;
-    justify-content: center;
-    padding: 10px;
-    padding-bottom: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 170%;
-    font-family: sans-serif;
- 
-  }
-  h3
+      font-size: 26px;
+      font-weight: bold;
+  } 
+  #time
   {
-      display: inline;
-  }
-  t
+      font-size: 18px;
+  } 
+  #condition
   {
-    text-align: left;
-    font-family: sans-serif;
-  }
- .rightSide 
- {
-    display: flex;
-    background-color: Transparent;
-    font-family: sans-serif;
-    align-items: center;
-    padding-top: 200px;
-    padding: 10%;
-    display: flex; 
- }
- k
- {
-     font-family: sans-serif;
+      font-size: 18px;
+  } 
+  #temp
+  {
+      font-size: 26px;
+      font-weight: bold;
+  } 
 
- }
+
   
