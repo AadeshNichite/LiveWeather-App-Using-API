@@ -33,9 +33,12 @@ function process()
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
       document.getElementById("temp").innerHTML=data.list[0].main.temp;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
+      document.getElementById("button1").style.color = "green";
+      document.getElementById("button2").style.color = "black";
       }
      request.send();
 }
+document.getElementById("button1").style.color = "green";
 function findTemp()
 {
   var selectedValue=document.getElementById("city").value;
@@ -49,6 +52,8 @@ function findTemp()
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
       document.getElementById("temp").innerHTML=data.list[0].main.temp;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
+      document.getElementById("button2").style.color = "green";
+      document.getElementById("button1").style.color = "black";
   }
   request.send()
 }
