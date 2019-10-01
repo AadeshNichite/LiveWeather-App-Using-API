@@ -19,7 +19,7 @@ span{
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 2em;
+    font-size: 3em;
 }
 .col-sm.r
 {
@@ -48,15 +48,17 @@ span{
   } 
   #time
   {
+    padding-top:0;
       font-size: 18px;
   } 
   #condition
   {
+
       font-size: 18px;
   } 
   #temp
   {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: bold;
   } 
   #city
@@ -65,6 +67,7 @@ span{
   }
   #textData
   {
+    
     font-size: 14px;
   }
 
