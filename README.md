@@ -1,6 +1,6 @@
 # LiveWeather-App-Using-API
 
-Simple Weather App which showa real-time temperature in both 
+Simple Weather App which showa real-time temperature in both celsius and fahrenheit.
 
 ## Application Name
 
