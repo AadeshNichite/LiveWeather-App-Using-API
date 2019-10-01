@@ -37,10 +37,9 @@ span{
     padding: 0;
     cursor: pointer;
     font-size: 14px;
-
   }
   .button1:focus{
-      color: green ;
+      background-color: yellow ;
   }
   #state
   {
@@ -60,6 +59,14 @@ span{
       font-size: 26px;
       font-weight: bold;
   } 
+  #city
+  {
+      size: 30px;
+  }
+  #textData
+  {
+    font-size: 14px;
+  }
 
 
   
