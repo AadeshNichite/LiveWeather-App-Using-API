@@ -33,42 +33,52 @@ span{
  .button1 {
     background:none;
     border: none;
-    margin: 0;
     padding: 0;
     cursor: pointer;
     font-size: 14px;
+
   }
   .button1:focus{
-      background-color: yellow ;
+      background-color: gray ;
   }
   #state
   {
       font-size: 26px;
-      font-weight: bold;
+      font-weight: bold;  
   } 
   #time
   {
-    padding-top:0;
+      padding-top:0;
       font-size: 18px;
   } 
   #condition
   {
-
+      padding-top:2;
       font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
   } 
   #temp
   {
+      padding-top: 0;
       font-size: 28px;
       font-weight: bold;
+     
   } 
   #city
   {
+    margin:0;
       size: 30px;
   }
   #textData
   {
-    
+    margin-bottom:0;
     font-size: 14px;
+    margin-top: 1rem;
+  }
+  h2
+  {
+    display: inline;
   }
 
 

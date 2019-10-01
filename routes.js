@@ -31,7 +31,7 @@ function process()
      // tempc=data.list[0].main.temp;
       var temp=city.filter((v)=> v.city===selectedValue);
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
-      document.getElementById("temp").innerHTML=data.list[0].main.temp+""+"&#8451;";
+      document.getElementById("temp").innerHTML=data.list[0].main.temp;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
       }
      request.send();
@@ -47,7 +47,7 @@ function findTemp()
        var data = JSON.parse(this.response);
        var temp=city.filter((v)=> v.city===selectedValue);
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
-      document.getElementById("temp").innerHTML=data.list[0].main.temp+""+"&#8457;";
+      document.getElementById("temp").innerHTML=data.list[0].main.temp;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
   }
   request.send()
