@@ -33,27 +33,28 @@ function process()
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
       document.getElementById("temp").innerHTML=data.list[0].main.temp;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
-      document.getElementById("button1").style.color = "green";
-      document.getElementById("button2").style.color = "black";
+      document.getElementById("button1").style.color = "black";
+      document.getElementById("button2").style.color = "lightblue";
       }
      request.send();
 }
-document.getElementById("button1").style.color = "green";
+document.getElementById("button2").style.color = "lightblue";
 function findTemp()
 {
   var selectedValue=document.getElementById("city").value;
   var request = new XMLHttpRequest()
   // Open a new connection, using the GET request on the URL endpoint
-     request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'& units=imperial&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
+     request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
       request.onload = function() {
     // Begin accessing JSON data here
        var data = JSON.parse(this.response);
        var temp=city.filter((v)=> v.city===selectedValue);
       document.getElementById("state").innerHTML=temp[0].city+" , "+temp[0].name;
-      document.getElementById("temp").innerHTML=data.list[0].main.temp;
+      let NewData=Math.round((data.list[0].main.temp*1.8)+32);
+      document.getElementById("temp").innerHTML=NewData;
       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
-      document.getElementById("button2").style.color = "green";
-      document.getElementById("button1").style.color = "black";
+      document.getElementById("button2").style.color = "black";
+      document.getElementById("button1").style.color = "lightblue";
   }
   request.send()
 }
