@@ -53,10 +53,16 @@ function process()
   }
   request.send()
 }
+function onloadData()
+{
+  alert("Allow Location?");
+  getLocation();
+  showPosition(position);
+}
 
 
 
-function getLocation() {
+  function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
