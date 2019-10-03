@@ -44,10 +44,11 @@ span{
       border-radius: 5;
   }
  
-  #state
+  #state,#Country
   {
       font-size: 26px;
       font-weight: bold;  
+      display: initial;
   } 
   #time
   {
@@ -94,5 +95,6 @@ span{
   {
       margin-top: 10px;
   }
+ 
  
   

@@ -4,14 +4,19 @@ var newD = new Date();
 var n = newD.getDay()
 let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 document.getElementById("time").innerHTML =week[n]+" , "+d;
-
+document.getElementById("city").onkeypress = function(event){
+  if (event.keyCode == 13 || event.which == 13){
+     process();
+  }
+};
 function process()
 {
-      var selectedValue=document.getElementById("city").value;
-      console.log(selectedValue);
+      let selectedValue=document.getElementById("city").value;
+      //console.log(selectedValue);
       if(selectedValue == "")
       {
        selectedValue=document.getElementById("state").textContent;
+       //console.log(selectedValue);
       }
        var request = new XMLHttpRequest()
       // Open a new connection, using the GET request on the URL endpoint
@@ -19,27 +24,43 @@ function process()
        request.onload = function() {
         // Begin accessing JSON data here
        var data = JSON.parse(this.response)
-       console.log(data);
-       //console.log(data.list[0].name)
-       document.getElementById("state").innerHTML=data.list[0].name;
-       document.getElementById("temp").innerHTML=data.list[0].main.temp;
-       document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
-       document.getElementById("button1").style.color = "black";
-       document.getElementById("button2").style.color = "#666666";
-       let icon="http://openweathermap.org/img/w/"+data.list[0].weather[0].icon+".png";
-       $("#icon").attr("src",icon);
-       document.getElementById("button1").style.visibility = "visible";
-       document.getElementById("button2").style.visibility = "visible";
-      }
-     request.send();
-}
+       if(!(data.count==0))
+        {
+          console.log(data.count);
+          // console.log(data.list[0].sys.country)
+          document.getElementById("state").innerHTML=data.list[0].name;
+        
+          document.getElementById("Country").innerHTML=","+data.list[0].sys.country;
+          //  Country
+          document.getElementById("temp").innerHTML=data.list[0].main.temp;
+          document.getElementById("condition").innerHTML=data.list[0].weather[0].description;
+          document.getElementById("button1").style.color = "blue";
+          document.getElementById("button2").style.color = "#666666";
+          let icon="http://openweathermap.org/img/w/"+data.list[0].weather[0].icon+".png";
+          $("#icon").attr("src",icon);
+          document.getElementById("button1").style.visibility = "visible";
+          document.getElementById("button2").style.visibility = "visible";
+          document.getElementById("button2").disabled = false;
+          }
+          else
+           {
+             alert("Please Enter Valid City Name");
+           }
+          }
+        request.send();
+
+    }
 
  function findTemp()
  { 
-   let tempc=document.getElementById("temp").textContent;
-   console.log(tempc);
-   let NewData=Math.round((tempc*1.8)+32);
+   
+  tempc=document.getElementById("temp").textContent;
+  console.log(tempc);
+  let NewData=Math.round((tempc*1.8)+32);
   document.getElementById("temp").innerHTML=NewData;
+  document.getElementById("button1").style.color = "#666666";
+  document.getElementById("button2").style.color = "blue";
+  document.getElementById("button2").disabled = true;
 
 }
 function onloadData()
@@ -64,15 +85,17 @@ function showPosition(position) {
     // Begin accessing JSON data here
      var data = JSON.parse(this.response);
       document.getElementById("state").innerHTML=data.name;
+      document.getElementById("Country").innerHTML=","+data.sys.country;
       document.getElementById("temp").innerHTML=data.main.temp;
       document.getElementById("condition").innerHTML=data.weather[0].description;
-     document.getElementById("button2").style.color = "black";
-     document.getElementById("button1").style.color = "#666666";
+     document.getElementById("button2").style.color = "#666666";
+     document.getElementById("button1").style.color = "blue";
      document.getElementById("button1").style.visibility = "visible";
      document.getElementById("button2").style.visibility = "visible";
      let icon="http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
      $("#icon").attr("src",icon);
    console.log(data);
+   document.getElementById("button2").disabled = false;
  }
  request.send()
 }
