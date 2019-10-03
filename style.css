@@ -10,23 +10,12 @@ span{
 .row{
     height: 100vh;
 }
-/* .col-sm.l
-{
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 2em;
-}*/
+
 .col-sm.r 
 {
     margin: 0;
     padding: 0;
-    background-color: #ecc0ff;
-  
+    background-color: #ecc0ff; 
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
