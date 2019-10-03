@@ -19,7 +19,7 @@ span{
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 3em;
+    font-size: 2em;
 }
 .col-sm.r
 {
@@ -29,6 +29,7 @@ span{
     justify-content: center;
     align-items: center;
     display: flex;
+  
 }
  .button1 {
     background:none;
@@ -36,7 +37,19 @@ span{
     padding: 0;
     cursor: pointer;
     font-size: 20px;
+    visibility: hidden;
+  }
+  .button
+  {
+    background:none;
+    border: none;
 
+  }
+  #city
+  {
+      border-radius: 3px;
+      width: 280px;
+      border-color: var(--color-1);
   }
  
   #state
@@ -55,6 +68,8 @@ span{
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 0;
+      display: contents;
+      
   } 
   #temp
   {
@@ -62,21 +77,18 @@ span{
       font-size: 28px;
       font-weight: bold;
   } 
-  #city
-  {
-         margin:0;
-      size: 30px;
-  }
-  #textData
-  {
-    margin-bottom:0;
-    font-size: 14px;
-    margin-top: 1rem;
-  }
+
   h2
   {
     display: inline;
   }
-
+  .DisplyInline
+  {
+      display: inline;
+  }
+  #icon
+  {
+      color: black;
+  }
 
   
