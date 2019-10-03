@@ -5,12 +5,12 @@
     --color-2:white;
 }
 span{
-    color:var( --color-2);
+    color: blueviolet;
 }
 .row{
     height: 100vh;
 }
-.col-sm.l
+/* .col-sm.l
 {
     margin: 0;
     padding: 0;
@@ -20,12 +20,14 @@ span{
     align-items: center;
     display: flex;
     font-size: 2em;
-}
-.col-sm.r
+}*/
+.col-sm.r 
 {
     margin: 0;
     padding: 0;
-    background-color: var( --color-2);
+    background-color: #ecc0ff;
+  
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -48,8 +50,9 @@ span{
   #city
   {
       border-radius: 3px;
-      width: 280px;
+      width: 250px;
       border-color: var(--color-1);
+      border-radius: 5;
   }
  
   #state
@@ -90,5 +93,11 @@ span{
   {
       color: black;
   }
-
+  #weather
+  {
+      color: black;
+      font-size: 2.5rem;
+      font-weight: bold;
+  }
+ 
   

@@ -19,29 +19,33 @@ It will indicate temprature of city in both celcius and ferinite-->
 <body onload="getLocation()">
         <div class="container-fluid">
             <div class="row">
-    <!-- left side of application -->
-                <div class="col-sm l">
+                 <!-- left side of application -->
+                <!-- <div class="col-sm l">
                      <text><span>Weather </span> App</text>
                      
-                </div>
+                </div> -->
                  <!-- right side of application -->
               <div class="col-sm r"> 
-              
+                            
                      <div class="data">
-                               
-                                <input type="text" id="city" placeholder="Enter City Name"/>
-                                <button class="button" id="submit" onclick="process();">🔍</button>
+                            <text id="weather"><span>Weather </span> App</text>
+                                
                                 <p id="currentCity"></p>
                                 <p id="state"> </p>
                                 <p id="time"></p>
                                 <div> 
-                                    <p id="condition"></p><img id="icon">
-                                    
+                                    <p id="condition"></p><img id="icon"> 
                                 </div>
-                                <h2 id="temp"> </h2>
-                          
-                                <button class="button1" id="button1" onclick="process()">&#8451;|</button>
-                                <button class="button1" id="button2" onclick="findTemp()">F</button>
+                                
+                                <div>
+                                    <h2 id="temp"></h2>
+                                    <button class="button1" id="button1" onclick="process()">&#8451;|</button>
+                                    <button class="button1" id="button2" onclick="findTemp()">F</button>
+                                </div>
+                                
+                                <input type="text" id="city" placeholder="Enter City Name"/>
+                                <button class="button" id="submit" onclick="process();">🔍</button>
+                                
                         </div>         
                 </div>
             </div>

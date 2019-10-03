@@ -33,6 +33,7 @@ function process()
  function findTemp()
  {
    var selectedValue=document.getElementById("city").value;
+   //console.log(selectedValue);
    var request = new XMLHttpRequest()
    // Open a new connection, using the GET request on the URL endpoint
       request.open('GET', 'http://api.openweathermap.org/data/2.5/find?q='+selectedValue+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
