@@ -63,12 +63,13 @@ function process()
   document.getElementById("button2").disabled = true;
 
 }
-function onloadData()
+class loadData{
+   onloadData()
 {
   alert("Allow Location?");
   getLocation();
 }
-  function getLocation() {
+ getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
@@ -76,8 +77,7 @@ function onloadData()
     
   }
 }
-
-function showPosition(position) {
+showPosition(position) {
   var request = new XMLHttpRequest()
   // Open a new connection, using the GET request on the URL endpoint
   request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
@@ -98,4 +98,5 @@ function showPosition(position) {
    document.getElementById("button2").disabled = false;
  }
  request.send()
+}
 }
