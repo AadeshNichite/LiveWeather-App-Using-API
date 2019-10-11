@@ -66,20 +66,19 @@ onloadData()
   alert("Allow Location?");
   var d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
   var newD = new Date();
-  var n = newD.getDay()
+  var n = newD.getDay();
+  let showPosition;
   let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   document.getElementById("time").innerHTML =week[n]+" , "+d;
-}
- getLocation()
-  {
-    if (navigator.geolocation) {
+  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-    
+    x.innerHTML = "Geolocation is not supported by this browser."  
   }
 }
-showPosition(position) {
+
+
+  showPosition(position) {
   var request = new XMLHttpRequest()
   // Open a new connection, using the GET request on the URL endpoint
   request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
@@ -102,8 +101,6 @@ showPosition(position) {
  request.send()
 }
 }
-
 loadData=new loadData();
 loadData.onloadData();
-
 
