@@ -99,3 +99,7 @@ showPosition(position) {
  }
  request.send()
 }
+}
+
+loadData=new loadData();
+
