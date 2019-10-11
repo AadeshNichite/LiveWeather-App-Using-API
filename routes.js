@@ -64,7 +64,8 @@ function process()
 
 }
 class loadData{
-   onloadData()
+
+onloadData()
 {
   alert("Allow Location?");
   getLocation();
@@ -102,4 +103,6 @@ showPosition(position) {
 }
 
 loadData=new loadData();
+loadData.onloadData();
+
 
