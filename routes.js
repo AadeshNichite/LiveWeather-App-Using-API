@@ -99,4 +99,3 @@ showPosition(position) {
  }
  request.send()
 }
-}
