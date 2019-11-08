@@ -45,6 +45,7 @@ function showPosition(position)
         document.getElementById("button1").style.color = "blue";
         document.getElementById("button1").style.visibility = "visible";
         document.getElementById("button2").style.visibility = "visible";
+          document.getElementById("button1").style.outline = "none";
         let icon="http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
         $("#icon").attr("src",icon);
         document.getElementById("button2").disabled = false;
