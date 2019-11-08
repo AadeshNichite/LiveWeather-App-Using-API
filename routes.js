@@ -81,6 +81,7 @@ function process()
             let icon="http://openweathermap.org/img/w/"+data.list[0].weather[0].icon+".png";
             $("#icon").attr("src",icon);
             document.getElementById("button1").style.visibility = "visible";
+            document.getElementById("button1").style.outline = "none";
             document.getElementById("button2").style.visibility = "visible";
             document.getElementById("button2").disabled = false;
           }
