@@ -1,5 +1,6 @@
 let tempc;
 
+//check enter pressed by button
 document.getElementById("city").onkeypress = function(event)
 {
     if (event.keyCode == 13 || event.which == 13)
