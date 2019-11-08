@@ -5,9 +5,17 @@
     --color-2:white;
     
 }
-body, html {
-    height: 100%;
-    margin: 0;
+body{
+    background-image: url("10470.png");
+
+    /* Full height */
+    /* height: 100vh;  */
+  
+    /* Center and scale the image nicely */
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
   }
 span{
     color: blueviolet;
@@ -100,20 +108,20 @@ span{
   {
       margin-top: 10px;
   }
-  .container-fluid {
-    width: 100%;
+  /* .container-fluid {
+    width: 100vw;
     padding: 0;
     margin:0;
-    background-image: url("2.jpg");
+    background-image: url("10470.png");
 
     /* Full height */
-    height: 100%; 
+    /* height: 100vh;  */
   
     /* Center and scale the image nicely */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: cover; */
+/* }  */
  
  
   
