@@ -1,4 +1,8 @@
-/* This css is used to gave the stylesheet to the index.html file  */
+/* WeatherApp
+Author: Aadesh 
+App indicates whether information about the city.
+It will indicate temprature of city in both celcius and ferinite 
+This css is used to gave the stylesheet to the index.html file */
 
 :root{
     --color-1:rgb(0, 204, 255);
@@ -17,7 +21,6 @@ span{
 }
 .row{
     height: 100vh;
-   
 }
 
 .col-sm.r 
@@ -103,20 +106,6 @@ span{
   {
       margin-top: 10px;
   }
-  /* .container-fluid {
-    width: 100vw;
-    padding: 0;
-    margin:0;
-    background-image: url("10470.png");
-
-    /* Full height */
-    /* height: 100vh;  */
   
-    /* Center and scale the image nicely */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-/* }  */
- 
  
   
