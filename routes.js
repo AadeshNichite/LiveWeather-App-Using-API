@@ -1,7 +1,9 @@
 let tempc;
 
-document.getElementById("city").onkeypress = function(event){
-  if (event.keyCode == 13 || event.which == 13){
+document.getElementById("city").onkeypress = function(event)
+{
+  if (event.keyCode == 13 || event.which == 13)
+  {
      process();
   }
 };
@@ -13,9 +15,12 @@ function onloadData()
   var n = newD.getDay();
   let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   document.getElementById("time").innerHTML =week[n]+" , "+d;
-  if (navigator.geolocation) {
+  if (navigator.geolocation) 
+  {
     navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
+  } 
+  else 
+  { 
     x.innerHTML = "Geolocation is not supported by this browser."  
   }
 }
