@@ -91,6 +91,7 @@ function process()
     request.send();
 }
 
+//Function convert celcius to farenhite
 function findTemp()
 { 
     tempc=document.getElementById("temp").textContent;
