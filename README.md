@@ -6,18 +6,9 @@ Simple Weather App which shows real-time temperature in both celsius and fahrenh
 
  WeatherApp
 
-## Author:
-
-[Aadesh Nichite](https://github.com/AadeshNichite)
-
 ## Technology Used:
 
-HTML, CSS, JavaScript
-
-## Objective:
-
-Create a Weather Application which shows real time temperature of cities. 
-
+HTML, CSS, JavaScript.
 
 ## Visit:
 [WeatherApp](https://aadeshnichite.github.io/LiveWeather-App-Using-API/)
