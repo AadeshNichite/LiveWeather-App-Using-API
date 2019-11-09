@@ -1,6 +1,6 @@
 # LiveWeather-App-Using-API
 
-Simple Weather App which shows real-time temperature in both celsius and fahrenheit.It ask to user for allowing access to location and then display its weather. 
+This is Online Weather App which shows real-time weather of specified city and its temperature in both celsius and fahrenheit. It ask to user for allowing access to location and then display its weather. 
 
 ## Application Name
 
