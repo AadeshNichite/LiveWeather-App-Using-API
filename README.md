@@ -1,23 +1,14 @@
 # LiveWeather-App-Using-API
 
-Simple Weather App which showa real-time temperature in both celsius and fahrenheit.
+This is Online Weather App which shows real-time weather of specified city and its temperature in both celsius and fahrenheit. It ask to user for allowing access to location and then display its weather. 
 
 ## Application Name
 
- Weather App
-
-## Author:
-
-[Aadesh Nichite](https://github.com/AadeshNichite)
+ WeatherApp
 
 ## Technology Used:
 
-HTML, CSS, JavaScript
-
-## Objective:
-
-Create a Weather Application which shows real time temperature of cities. 
-
+HTML, CSS, JavaScript.
 
 ## Visit:
 [WeatherApp](https://aadeshnichite.github.io/LiveWeather-App-Using-API/)

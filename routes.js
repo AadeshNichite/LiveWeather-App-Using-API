@@ -19,9 +19,9 @@ document.getElementById("city").onkeypress = function(event)
 function onloadData()
 {
     alert("Allow Location?");
-    var d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
-    var newD = new Date();
-    var n = newD.getDay();
+    let d=new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' });
+    let newD = new Date();
+    let n = newD.getDay();
     let week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
     document.getElementById("time").innerHTML =week[n]+" , "+d;
     if (navigator.geolocation) 
@@ -36,13 +36,13 @@ function onloadData()
 
 function showPosition(position)
 { 
-    var request = new XMLHttpRequest()
+    let request = new XMLHttpRequest()
     // Open a new connection, using the GET request on the URL endpoint
     request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&units=metric&appid=af8a888b5c0d1f1ce6a286db966af8ed', true)
      request.onload = function() 
      {
     // Begin accessing JSON data here
-        var data = JSON.parse(this.response);
+        let data = JSON.parse(this.response);
         document.getElementById("state").innerHTML=data.name;
         document.getElementById("Country").innerHTML=","+data.sys.country;
         document.getElementById("temp").innerHTML=data.main.temp;
@@ -51,6 +51,7 @@ function showPosition(position)
         document.getElementById("button1").style.color = "blue";
         document.getElementById("button1").style.visibility = "visible";
         document.getElementById("button2").style.visibility = "visible";
+          document.getElementById("button1").style.outline = "none";
         let icon="http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
         $("#icon").attr("src",icon);
         document.getElementById("button2").disabled = false;
@@ -66,7 +67,7 @@ function process()
     {
         selectedValue=document.getElementById("state").textContent;
     }
-    var request = new XMLHttpRequest()
+    let request = new XMLHttpRequest()
 
     // Open a new connection, using the GET request on the URL endpoint
 
@@ -74,7 +75,7 @@ function process()
     request.onload = function()
      {
         // Begin accessing JSON data here
-        var data = JSON.parse(this.response)
+        let data = JSON.parse(this.response)
         if(!(data.count==0))
         {
             console.log(data.count);
