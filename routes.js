@@ -1,3 +1,9 @@
+// WeatherApp
+// Author: Aadesh 
+// App indicates whether information about the city.
+// It will indicate temprature of city in both celcius and ferinite
+//This Javascript file has whole processing of data which is get using liveweatherApp API
+
 let tempc;
 
 //check enter pressed by button
@@ -84,6 +90,7 @@ function process()
             document.getElementById("button1").style.outline = "none";
             document.getElementById("button2").style.visibility = "visible";
             document.getElementById("button2").disabled = false;
+            document.getElementById("button").style.outline = "none";
           }
           else
           {
