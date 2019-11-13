@@ -1,0 +1,112 @@
+/* WeatherApp
+Author: Aadesh 
+App indicates whether information about the city.
+It will indicate temprature of city in both celcius and ferinite 
+This css is used to gave the stylesheet to the index.html file */
+
+:root{
+    --color-1:rgb(0, 204, 255);
+    --color-2:white;
+    
+}
+body{
+    background-image: url("images/10470.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+span{
+    color: white;
+}
+.row{
+    height: 100vh;
+}
+
+.col-sm.r 
+{
+    margin: 0;
+    padding: 0;
+      
+    justify-content: center;
+    align-items: center;
+    display: flex;
+      
+}
+ .button1 {
+    background:none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 20px;
+    visibility: hidden;
+    outline: none;
+  }
+  .button
+  {
+    background:none;
+    border: none;
+    outline: none;
+  }
+  #city
+  {
+      border-radius: 3px;
+      width: 250px;
+      border-color: var(--color-1);
+      border-radius: 5;
+  }
+ 
+  #state,#Country
+  {
+      font-size: 26px;
+      font-weight: bold;  
+      display: initial;
+  } 
+  #time
+  {
+      padding-top:0;
+      font-size: 18px;
+  } 
+  #condition
+  {
+      padding-top:2;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 0;
+      display: contents;
+      
+  } 
+  #temp
+  {
+      padding-top: 0;
+      font-size: 28px;
+      font-weight: bold;
+  } 
+
+  h2
+  {
+    display: inline;
+    
+  }
+  .DisplyInline
+  {
+      display: inline;
+  }
+  #icon
+  {
+      color: black;
+      width: 40px;
+  }
+  #weather
+  {
+      color: black;
+      font-size: 2.5rem;
+      font-weight: bold;
+  }
+  .bottom
+  {
+      margin-top: 10px;
+  }
+  
+ 
+  
