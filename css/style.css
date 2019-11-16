@@ -10,7 +10,7 @@ This css is used to gave the stylesheet to the index.html file */
     
 }
 body{
-    background-image: url("/images/10470.png");
+    background-image: url('images/10470.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
