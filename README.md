@@ -14,4 +14,4 @@ HTML, CSS, JavaScript.
 ![Drag Racing](images/homepage.png)
 
 ## Visit:
-[WeatherApp](https://aadeshnichite.github.io/LiveWeather-App-Using-API/)
+[WeatherApp](https://trusting-boyd-533aca.netlify.com)
